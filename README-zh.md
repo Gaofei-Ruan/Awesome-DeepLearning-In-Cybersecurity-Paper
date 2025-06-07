@@ -1,6 +1,6 @@
 # 🧠 网络安全中的深度学习论文精选（Awesome Deep Learning in Cybersecurity）
 
-[![GitHub Stars](https://img.shields.io/github/stars/ruangaofei/Awesome-DeepLearning-In-Cybersecurity-Paper?style=social)](https://github.com/ruangaofei/Awesome-DeepLearning-In-Cybersecurity-Paper/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/Gaofei-Ruan/Awesome-DeepLearning-In-Cybersecurity-Paper?style=social)](https://github.com/ruangaofei/Awesome-DeepLearning-In-Cybersecurity-Paper/stargazers)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Last Update](https://img.shields.io/badge/Last_Update-2025年6月-blue)]()
 
