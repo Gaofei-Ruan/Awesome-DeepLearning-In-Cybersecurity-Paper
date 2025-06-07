@@ -2,73 +2,82 @@
 
 [![GitHub Stars](https://img.shields.io/github/stars/ruangaofei/Awesome-DeepLearning-In-Cybersecurity-Paper?style=social)](https://github.com/ruangaofei/Awesome-DeepLearning-In-Cybersecurity-Paper/stargazers)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Last Update](https://img.shields.io/badge/Last_Update-2025年6月-blue)]()
 
-🌍 本项目的 [English Version](README.md)
-
-## 📑 目录
-
-- [1. 综述与指南类论文](#-1-综述与指南类论文)
-- [2. 网络流量分析](#-2-网络流量分析)
-  - [2.1 网络入侵检测](#21-网络入侵检测)
-  - [2.2 加密流量分析](#22-加密流量分析)
-- [3. 告警与日志分析](#-3-告警与日志分析)
-  - [3.1 网络日志告警](#31-网络日志告警)
-- [待补充事项](#-待补充事项)
-- [许可证](#-许可证)
-
-[![Last Update](https://img.shields.io/badge/最后更新-June_2025-blue)]()
-
-🌍 本项目的 [English Version](README.md)
-
-本项目整理了应用 **深度学习（Deep Learning）** 方法于各类 **网络安全任务** 的研究论文，按主题分类，持续更新。
+🌍 本项目另有英文版本：[English Version](README.md)
 
 ---
 
-## 📚 1. 综述与指南类论文
+## 📑 目录
 
-| 方法 | 标题 | 简介 |
-|------|------|------|
-| 指南类 | [**(USENIX Security 2022)** Dos and Don’ts of Machine Learning in Computer Security](https://www.usenix.org/conference/usenixsecurity22/presentation/arp) | 回顾 ML 在顶会安全论文中的应用，总结安全领域中 ML 使用的注意事项。 |
+- [📚 1. 综述与指导类](#-1-综述与指导类)
+- [🌐 2. 网络流量分析](#-2-网络流量分析)
+  - [2.1 入侵检测](#21-入侵检测)
+  - [2.2 加密流量分类](#22-加密流量分类)
+- [🚨 3. 告警与日志分析](#-3-告警与日志分析)
+  - [3.1 网络告警日志](#31-网络告警日志)
+- [🧩 后续计划](#-后续计划)
+- [📄 许可协议](#-许可协议)
+
+---
+
+## 📚 1. 综述与指导类
+
+### 🧾 Dos and Don’ts of Machine Learning in Computer Security（USENIX Security 2022）
+- **方法**：经验指南  
+- **链接**：[论文地址](https://www.usenix.org/conference/usenixsecurity22/presentation/arp)  
+- **简介**：回顾了过去十年在顶级安全会议中应用机器学习的方法与教训，提出了网络安全中使用机器学习的最佳实践与常见误区。
 
 ---
 
 ## 🌐 2. 网络流量分析
 
-### 2.1 网络入侵检测
+### 2.1 入侵检测
 
-| 方法 | 标题 | 简介 |
-|------|------|------|
-| 指南类 | [**(IEEE S&P 2010)** Outside the Closed World](https://ieeexplore.ieee.org/abstract/document/5504793) | 介绍 ML/DL 在流量异常检测中的局限性。 |
-| 自编码器集成 | [**(NDSS 2018)** Kitsune](https://arxiv.org/abs/1802.09089) | 轻量级无监督 NIDS，基于多个自编码器学习正常流特征。 |
+#### 🧾 Outside the Closed World（IEEE S&P 2010）
+- **方法**：经验反思  
+- **链接**：[论文地址](https://ieeexplore.ieee.org/abstract/document/5504793)  
+- **简介**：经典论文，深入探讨了在入侵检测中使用机器学习面临的挑战与限制，对领域研究影响深远。
 
-### 2.2 加密流量分析
+#### 🧾 Kitsune: 基于自编码器的轻量级入侵检测（NDSS 2018）
+- **方法**：自编码器集成  
+- **链接**：[论文地址](https://arxiv.org/abs/1802.09089)  
+- **简介**：提出了一种面向在线检测的轻量级入侵检测系统，使用多个自编码器学习正常行为，实现异常检测，无需监督训练。
 
-| 方法 | 标题 | 简介 |
-|------|------|------|
-| 预训练（BERT） | [**(WWW 2022)** ET-BERT](https://dl.acm.org/doi/fullHtml/10.1145/3485447.3512217) | 使用 BERT 进行加密流量分类，首次引入 TLS 1.3 数据集。 |
+### 2.2 加密流量分类
+
+#### 🧾 ET-BERT：用于加密流量的预训练Transformer模型（WWW 2022）
+- **方法**：预训练（BERT）  
+- **链接**：[论文地址](https://dl.acm.org/doi/fullHtml/10.1145/3485447.3512217)  
+- **简介**：将加密流量划分为突发（Burst）结构并转化为Tokens，基于BERT进行建模，并构建了首个面向TLS 1.3的加密流量数据集。
 
 ---
 
 ## 🚨 3. 告警与日志分析
 
-### 3.1 网络日志告警
+### 3.1 网络告警日志
 
-| 方法 | 标题 | 简介 |
-|------|------|------|
-| 指南类 | [**(CCS 2017)** DeepLog](https://dl.acm.org/doi/abs/10.1145/3133956.3134015) | （待补充） |
-| Attention + GRU | [**(IEEE S&P 2022)** DEEPCASE](https://ieeexplore.ieee.org/abstract/document/9833671/) | 半监督聚类与解释告警日志上下文相关性。 |
+#### 🧾 DeepLog：基于深度学习的日志异常检测（CCS 2017）
+- **方法**：序列建模（待补全）  
+- **链接**：[论文地址](https://dl.acm.org/doi/abs/10.1145/3133956.3134015)  
+- **简介**：*（待完善）*
 
----
-
-## 🧩 待补充事项
-
-- [ ] 增加主机日志分析类论文；
-- [ ] 增加数据集与 benchmark；
-- [ ] 按网络结构归类（CNN/GNN/Transformer）；
-- [ ] 增加论文属性标签（如无监督等）。
+#### 🧾 DEEPCASE：半监督告警事件聚类与解释（IEEE S&P 2022）
+- **方法**：注意力机制 + GRU  
+- **链接**：[论文地址](https://ieeexplore.ieee.org/abstract/document/9833671/)  
+- **简介**：针对单条日志构建设备日志序列，通过GRU提取上下文语义，并用注意力建模日志之间的关联性，实现可解释的事件聚类。
 
 ---
 
-## 📄 许可证
+## 🧩 后续计划
 
-本项目基于 MIT License 开源。
+- [ ] 增补主机日志分析相关工作  
+- [ ] 补充开源数据集与benchmark链接  
+- [ ] 按深度学习架构分类（如CNN, RNN, Transformer）  
+- [ ] 增加方法标签（如无监督、半监督、自监督）  
+
+---
+
+## 📄 许可协议
+
+本项目基于 MIT 协议开源发布。
